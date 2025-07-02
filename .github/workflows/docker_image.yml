@@ -13,3 +13,5 @@ jobs:
                 docker login ghcr.io --username ${{secrets.DOCKER_GITHUB_USERNAME}} --password ${{secrets.DOCKER_GITHUB_ACCESS_TOKEN}}
                 docker build . -t ghcr.io/wdkeyser03/java-hello-from-myhomelab:latest
                 docker push ghcr.io/wdkeyser03/java-hello-from-myhomelab:latest
+                docker build . -t willydekeyser/java-hello-from-myhomelab:latest
+                docker push willydekeyser/java-hello-from-myhomelab:latest
